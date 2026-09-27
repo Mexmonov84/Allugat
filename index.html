@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onlayn Lug'at</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        
+        <!-- CHAP USTUN: Qidiruv tarixi -->
+        <aside class="side-card">
+            <h3>🕒 Oxirgi qidiruvlar</h3>
+            <ul class="history-list">
+                <li><span>dasturlash</span> <small>Programming</small></li>
+                <li><span>kitob</span> <small>Book</small></li>
+                <li><span>ilm</span> <small>Science</small></li>
+            </ul>
+        </aside>
+
+        <!-- O'RTADAGI ASOSIY KARTA -->
+        <main class="main-card">
+            <header>
+                <h1>Onlayn Lug'at</h1>
+                <p>So'zlarning ma'nosini va tarjimasini tez va oson toping</p>
+                <nav>
+                    <ul>
+                        <li><a href="#">Qidiruv</a></li>
+                        <li><a href="#">Kunning so'zi</a></li>
+                        <li><a href="#">Loyiha haqida</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- QIDIRUV VA TARJIMA FORMASI -->
+            <section id="search-section">
+                <h2>So'z qidirish</h2>
+                <form id="dictionaryForm">
+                    <label for="search-input">SO'ZNI KIRITING:</label>
+                    <input type="text" id="search-input" placeholder="Masalan: kitob, dasturlash..." required>
+
+                    <label for="translation-output">TARJIMASI:</label>
+                    <input type="text" id="translation-output" placeholder="Tarjimasi bu yerda chiqadi..." readonly>
+
+                    <label for="language-select">YO'NALISH (TIL):</label>
+                    <select id="language-select">
+                        <!-- 30 TA TIL YO'NALISHLARI -->
+                        <option value="uz-en">O'zbekcha -> Inglizcha</option>
+                        <option value="en-uz">Inglizcha -> O'zbekcha</option>
+                        <option value="uz-ru">O'zbekcha -> Ruscha</option>
+                        <option value="ru-uz">Ruscha -> O'zbekcha</option>
+                        <option value="uz-tr">O'zbekcha -> Turkcha</option>
+                        <option value="tr-uz">Turkcha -> O'zbekcha</option>
+                        <option value="uz-de">O'zbekcha -> Nemischa</option>
+                        <option value="de-uz">Nemischa -> O'zbekcha</option>
+                        <option value="uz-fr">O'zbekcha -> Fransuzcha</option>
+                        <option value="fr-uz">Fransuzcha -> O'zbekcha</option>
+                        <option value="uz-es">O'zbekcha -> Ispancha</option>
+                        <option value="es-uz">Ispancha -> O'zbekcha</option>
+                        <option value="uz-ar">O'zbekcha -> Arabcha</option>
+                        <option value="ar-uz">Arabcha -> O'zbekcha</option>
+                        <option value="uz-zh">O'zbekcha -> Xitoycha</option>
+                        <option value="zh-uz">Xitoycha -> O'zbekcha</option>
+                        <option value="uz-ko">O'zbekcha -> Koreyscha</option>
+                        <option value="ko-uz">Koreyscha -> O'zbekcha</option>
+                        <option value="uz-ja">O'zbekcha -> Yaponcha</option>
+                        <option value="ja-uz">Yaponcha -> O'zbekcha</option>
+                        <option value="uz-fa">O'zbekcha -> Forscha</option>
+                        <option value="fa-uz">Forscha -> O'zbekcha</option>
+                        <option value="uz-it">O'zbekcha -> Italyancha</option>
+                        <option value="it-uz">Italyancha -> O'zbekcha</option>
+                        <option value="uz-kaz">O'zbekcha -> Qozog'cha</option>
+                        <option value="kaz-uz">Qozog'cha -> O'zbekcha</option>
+                        <option value="uz-kir">O'zbekcha -> Qirg'izcha</option>
+                        <option value="kir-uz">Qirg'izcha -> O'zbekcha</option>
+                        <option value="uz-tg">O'zbekcha -> Tojikcha</option>
+                        <option value="tg-uz">Tojikcha -> O'zbekcha</option>
+                    </select>
+
+                    <button type="submit">Qidirish</button>
+                </form>
+            </section>
+
+            <hr>
+
+            <!-- NATIJA: SO'Z TURKUMI, MA'NOSI VA TASNIFI -->
+            <section id="results">
+                <h2>Qidiruv natijasi va So'z tasnifi</h2>
+                
+                <div class="result-card">
+                    <div class="result-header">
+                        <h3>Dasturlash</h3>
+                        <span class="pronunciation">[dasturlash]</span>
+                    </div>
+
+                    <div class="pos-tag">
+                        <span>So'z turkumi:</span> <strong>Ot (Harakat nomi)</strong>
+                    </div>
+
+                    <div class="info-block">
+                        <h4>📖 So'zning ma'nosi</h4>
+                        <p>Kompyuterlar va avtomatlashtirilgan tizimlar uchun dasturlar, algoritmlar hamda buyruqlar ketma-ketligini tuzish va ishlab chiqish jarayoni.</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h4>💡 So'z ta'rifi</h4>
+                        <p>Inson va hisoblash mashinalari o'rtasidagi muloqotni mantiqiy kodlar orqali ta'minlaydigan, muammolarni tizimli tahlil qilish hamda amaliy yechim beruvchi soha.</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h4>📋 So'zga tasnif (Xususiyatlari)</h4>
+                        <ul class="classification-list">
+                            <li><strong>Kelib chiqishi:</strong> O'zbekcha (dastur + -lash qo'shimchasi)</li>
+                            <li><strong>Tuzilishiga ko'ra:</strong> Yasama so'z</li>
+                            <li><strong>Uslubiy xususiyati:</strong> Ilmiy-texnikaviy atama</li>
+                        </ul>
+                    </div>
+
+                    <div class="meta-grid">
+                        <div class="meta-item">
+                            <span class="label">Sinonimlari:</span>
+                            <span class="value">Kodlash, algoritmizatsiya, dastur tuzish</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">Misol:</span>
+                            <p class="example-text">"U zamonaviy dasturlash yo'nalishlarini puxta egallamoqda."</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- O'NG USTUN: Kunning so'zi -->
+        <aside class="side-card">
+            <h3>🌟 Kunning so'zi</h3>
+            <div class="word-box">
+                <h4>Ma'rifat</h4>
+                <p><strong>[Ot]</strong> Bilim, madaniyat va ma'rifatga ega bo'lish holati.</p>
+            </div>
+        </aside>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
